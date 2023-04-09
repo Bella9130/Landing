@@ -1,0 +1,580 @@
+:root {
+    --Main: rgb(5, 3, 45);
+    --Dark: rgb(2, 3, 9);
+    --white: rgb(255, 256, 256);
+    --shadow:rgb(9, 7, 37);
+    --shadow2:rgba(2, 3, 9, .7);
+}
+
+.inactive {
+    display: none;
+}
+
+
+ body {
+    margin: -22px 0 0 0;
+    background: var(--Dark);
+    color: var(--white);
+    font-family:cursive;
+    scroll-behavior: auto;
+} 
+ 
+
+
+nav {
+    background-color: var(--Dark);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    opacity: .8;
+    z-index: 1;
+}
+
+.container__left{
+    display: flex;
+    justify-items: center;
+    
+    
+}
+
+.ul__nav{
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.li__ul{
+    list-style: none;
+    padding: 20px;
+    transition: 1s;
+}
+
+.li__ul a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bolder;
+    
+}
+
+.li__ul a:hover{
+    color: rgb(25, 94, 110);
+    transition: .3s;
+}
+
+.imagen__toggle {
+    width: 35px;
+    height: 35px;
+    margin: 30px 0 0 10px;
+    cursor: pointer;
+}
+
+/*----------------------------- agregados modJs ------------------------------*/
+
+/*------------- Menu Logo --------------*/
+
+.menu__logo{    
+    background-color: var(--shadow2);
+    width: 110px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    left: 00px;
+    top: 50px;
+    position: absolute;
+}
+
+.ul__menu-logo{
+    padding: 0;
+}
+
+.ul__menu-logo li{
+    list-style: none;
+    margin: 2px 0;
+
+}
+.ul__menu-logo a{
+    text-decoration: none;
+    color: var(--white);
+}
+.ul__menu-logo a:hover{
+    text-decoration: none;
+    color: var(--shadow);
+    transition: .4s;
+}
+
+/*----------- search(cuando sepas poner busquedas jeje) ------------*/
+
+
+/* .search__container{
+    background-color: var(--Dark);
+    opacity: .9;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    left: 26.6%;
+    top: 290px;
+    position: absolute;
+}
+
+.ul__search-div{
+    padding: 0;
+}
+
+.ul__search-div > li{
+    list-style: none;
+    z-index: 1;
+}
+
+.ul__search-div a{
+    padding: 0;
+    text-decoration: none;
+    color: var(--white);
+} */
+
+/*--------------- contenedor rigth-------------- */
+
+.content__right{
+    display: flex;
+    justify-items: center;
+}
+.ul__nav-right{
+    display: flex;
+    justify-content: center;
+    margin: 0 40px 0 0;
+}
+
+.li__ul-rigth{
+    list-style: none;
+    padding: 0 20px;
+}
+
+.li__ul-rigth a{ 
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bolder;
+}
+
+.li__ul-rigth a:hover{
+    color: rgb(25, 94, 110);
+    transition: .5s;
+}
+
+
+/*---------- section1-main-coverpage ----------*/
+
+.section1__nav{
+    width: 100%;
+    height: 95vh;   
+    margin-top: 15px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.banner{
+    background-image: url(./imagenes/fondoHome.jpg);
+    transition: 1s;
+    object-fit: cover;
+    background-size: cover;
+    width: 220%;
+    height: 105%;
+}
+
+
+.button__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-46%, 150%);
+    text-align: center;
+
+}
+
+.button__content a{
+    color: var(--white);
+    padding: 20px 50px;
+    border-radius: 20px;
+    background-color: var(--Dark);
+    border: none;
+    text-decoration: none;
+    position: relative;
+    transition: 1s;
+}
+.button__content a:hover{
+    cursor: pointer;
+    color: var(--white);
+    padding: 15px 40px;
+    transition: 1s;
+}
+
+
+.input__content {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 400px;
+     height: 100px;
+     opacity: .5;
+     transform: translate(-50%, -110%);
+     background-color: var(--Dark);
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+    
+}
+
+.input__content > input{
+    width: 200px;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    opacity: 1;
+    margin: 0 20px 0 0;
+    transition: 1s;
+    
+}
+.input__content > input:hover{
+    width: 219px;
+    height: 25px;
+    border-radius: 20px;
+    position: relative;
+    opacity: 1;
+    margin: 0 20px 0 0;
+    transition: 1s;
+    
+}
+
+
+.input__content span{
+    margin: 0 5px 0 0;
+    transition: 1s;
+    
+}
+
+/*---------- section-2-main-coverpage ----------*/
+
+.container__div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+
+
+.section2__container{
+    margin-top: 100px;
+    background: var(--white);
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container__section2{
+    margin-top: 0px 0;
+
+    
+}
+
+.title__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 0 0;
+}
+.title__content h3{
+    
+    color: var(--Dark);
+}
+
+
+
+.container__section2 img{
+    width: 250px;
+    height: 120px;
+    margin: 0  5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container__section1{
+    margin-top: 50px;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+}
+
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    
+    
+
+}
+
+
+
+.one{
+    position: relative;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    width: 150px;
+    height: 190px;
+    border-radius: 20px;
+    background-color: var(--shadow2)
+
+}
+.one:hover{
+    position: relative;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: .9s;
+    background-color: var(--Dark);
+    opacity: .6;
+   
+ 
+}
+
+.one > h2 {
+    align-items: center;
+    transition: .5;
+
+}
+
+.one > a {
+    text-decoration: none;
+    color: var(--white);
+    
+}
+
+
+
+.img-1 {
+    background-image: url(/imagenes/paisaje.jpeg);
+    background-size: cover;
+    width: 150px;
+    height: 190px;
+    border-radius: 20px;
+    margin: 0 10px 0 0;
+    transition: 1s;
+   
+
+}
+.img-1:hover {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    width: 150px;
+    height: 190px;
+    border-radius: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    transition: 1s;
+    
+
+}
+
+.img-2 {
+    width: 100px;
+    height: 100px;
+    background-image: url(/imagenes/Img-paisaje.png);
+    background-size: cover;
+    width: 150px;
+    height: 190px;
+    border-radius: 20px;
+    margin: 0 10px 0 0 ;
+    transition: 1s;
+}
+.img-2:hover {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    width: 150px;
+    height: 190px;
+    border-radius: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.img-3 {
+    width: 100px;
+    height: 100px;
+    background-image: url(/imagenes/paisaje.jpeg);
+    background-size: cover;
+    background-position: -100px;
+    width: 150px;
+    height: 190px;
+    border-radius: 20px;
+    transition: 1s;
+
+}
+.img-3:hover {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    width: 150px;
+    height: 190px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.img-4 {
+    width: 100px;
+    height: 100px;
+    background-image: url(/imagenes/fondoHome.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 190px;
+    border-radius: 20px;
+    margin: 0 0 0 10px;
+    transition: 1s;
+
+}
+
+.img-4:hover {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    width: 150px;
+    height: 190px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+
+/*----------------- 2da__row ----------------- */
+
+.content__row2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.img-5 {
+    width: 100px;
+    height: 100px;
+    background-image: url(/imagenes/paisaje.jpeg);
+    background-size: cover;
+    width: 150px;
+    height: 190px;
+    border-radius: 20px;
+    margin: 0 0 0 10px;
+    transition: 1s;
+
+}
+
+.img-5:hover {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    width: 150px;
+    height: 190px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+/*------------ section ------------ */
+
+.section3__container{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.interact__container{
+    width: 100%;
+    height: auto;
+    background-color: var(--Dark);
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.informaction__container{
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    width: 70%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.informaction__container h3{
+    margin: 0 0 15px 0 ;
+     
+ }
+
+.container__search-send{
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+   
+}
+
+.informaction__container input{
+    border: 2px solid var(--D);
+    border-radius: 10px;
+    width: 300px;
+    height: 20px;
+    
+}
+
+.informaction__container img{
+    margin: 0 0 15px 0 ;
+     
+ }
+#img__enviar{
+    width: 30px;
+    height: 30px;
+    margin: -5px 0 0 10px;
+    background-color: aliceblue;
+
+}
+
+
+
+
+
+
+
+
+
+
+.inactive {
+    display: none;
+}
